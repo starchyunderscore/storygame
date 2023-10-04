@@ -1,0 +1,17 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="css/index.css">
+  <script src="js/index.js"></script>
+  <title>Story game</title>
+</head>
+<body>
+	<h1 id="timer">20</h1>
+	<input type="range" min="10" max="120" value="20" id="timesel" onchange="updateTimer()">
+	<p id="previous"></p>
+	<textarea id="textbox" placeholder="Start typing to begin" oninput="textUpdate()"></textarea>
+	<button id="done" onclick="done()">Finish game</button>
+</body>
+</html>
